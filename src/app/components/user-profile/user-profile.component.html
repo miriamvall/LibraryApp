@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="inner-main">
+            <h2 class="mb-4" routerLink="user-profile/{{this.currentUser._id}}" routerLinkActive="active">User Profile</h2>
+            <p><strong>Name:</strong> {{this.currentUser.username}}</p>
+            <p><strong>Email:</strong> {{this.currentUser.email}}</p>
+            <p><strong>id:</strong> {{this.currentUser._id}}</p>
+            <a class="btn btn-primary" routerLink="book-list" routerLinkActive = "active">Book List</a>
+            <a class="btn btn-primary" routerLink="create-book" routerLinkActive = "active">Add Book</a>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
